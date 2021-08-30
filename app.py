@@ -1,4 +1,3 @@
-import cv2
 import numpy as np
 from numpy.core.arrayprint import str_format
 import requests
@@ -30,12 +29,8 @@ from matplotlib import style
 # %matplotlib inline
 import warnings
 style.use('fivethirtyeight')
-# sns.set(style='whitegrid',color_codes=True)
 
-#model selection
-# from sklearn.model_selection import train_test_split
-# from sklearn.metrics import accuracy_score,confusion_matrix
-# from sklearn.preprocessing import LabelEncoder
+
 from tensorflow import keras
 #preprocess.
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
@@ -82,7 +77,7 @@ def increase_brightness(img, value=30):
     return img
 
 
-model = tensorflow.keras.models.load_model("./TM450New.h5")
+model = tensorflow.keras.models.load_model("TM450New.h5")
 
 output1=[]
 ima1=""
@@ -96,9 +91,7 @@ def predict():
         print(ima1)
         
         
-        # ima = ima.replace(":","%3A")
-        # urllib.request.urlopen((start_url)).read()
-        # request.args.get("ima", type =str)
+        
 
         urllib.request.urlretrieve( str(ima1) ,"gfg.png")
 
@@ -133,10 +126,7 @@ def predict():
                 output=prediction[0].tolist().index(prediction[0].max())
                 output1.append(output)
                 
-                # perform some inference and return numpy array
-                
-        # response = output1 #dummy response
-        # response_pickled = jsonpickle.encode(response)
+         
         return  jsonify(output1)
 
 
@@ -149,9 +139,6 @@ if __name__ == '__main__':
 
 
 
-#Code for OCR for Image from firebase 
 
-
-# ima='https://firebasestorage.googleapis.com/v0/b/lpggasmaster1.appspot.com/o/image12021-08-16%2012%3A04%3A25.482874?alt=media&token=5fa99c0b-3e22-4ada-b6d7-e227af4a376e'
 
        
