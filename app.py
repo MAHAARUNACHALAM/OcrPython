@@ -82,7 +82,7 @@ def increase_brightness(img, value=30):
     return img
 
 
-model = tensorflow.keras.models.load_model("TM450New.h5")
+model = tensorflow.keras.models.load_model("./TM450New.h5")
 
 output1=[]
 ima1=""
