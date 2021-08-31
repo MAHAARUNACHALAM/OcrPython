@@ -99,19 +99,9 @@ def predict():
 
         img=np.asarray(img)
 
-#         crop=img[280:320,55:380]
         crop1=img[0:100,0:380]
         Oimg=[]
 
-
-#         Oimg.append(crop[0:crop.shape[1],0:40])
-#         Oimg.append(crop[0:crop.shape[1],40:80])
-#         Oimg.append(crop[0:crop.shape[1],80:110])
-#         Oimg.append(crop[0:crop.shape[1],120:150])
-#         Oimg.append(crop[0:crop.shape[1],150:190])
-#         Oimg.append(crop[0:crop.shape[1],190:230])
-#         Oimg.append(crop[0:crop.shape[1],230:270])
-#         Oimg.append(crop[0:crop.shape[1],270:310])
           Oimg.append(crop1[0:crop1.shape[1],0:55])
           Oimg.append(crop1[0:crop1.shape[1],55:95])
           Oimg.append(crop1[0:crop1.shape[1],95:140])
