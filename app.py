@@ -96,6 +96,8 @@ def predict():
         urllib.request.urlretrieve( str(ima1) ,"gfg.png")
 
         img = Image.open("gfg.png")
+        if (img.size[0]>img.size[1]):
+         img = img.rotate(-90, expand=True)
 
         img=np.asarray(img)
 
