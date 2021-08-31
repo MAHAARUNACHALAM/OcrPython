@@ -102,14 +102,14 @@ def predict():
         crop1=img[0:100,0:380]
         Oimg=[]
 
-          Oimg.append(crop1[0:crop1.shape[1],0:55])
-          Oimg.append(crop1[0:crop1.shape[1],55:95])
-          Oimg.append(crop1[0:crop1.shape[1],95:140])
-          Oimg.append(crop1[0:crop1.shape[1],140:180])
-          Oimg.append(crop1[0:crop1.shape[1],180:230])
-          Oimg.append(crop1[0:crop1.shape[1],230:280])
-          Oimg.append(crop1[0:crop1.shape[1],280:320])
-          Oimg.append(crop1[0:crop1.shape[1],320:370])
+        Oimg.append(crop1[0:crop1.shape[1],0:55])
+        Oimg.append(crop1[0:crop1.shape[1],55:95])
+        Oimg.append(crop1[0:crop1.shape[1],95:140])
+        Oimg.append(crop1[0:crop1.shape[1],140:180])
+        Oimg.append(crop1[0:crop1.shape[1],180:230])
+        Oimg.append(crop1[0:crop1.shape[1],230:280])
+        Oimg.append(crop1[0:crop1.shape[1],280:320])
+        Oimg.append(crop1[0:crop1.shape[1],320:370])
         output1=[]
         for i in Oimg:
                 X = increase_brightness(i, value=80)
