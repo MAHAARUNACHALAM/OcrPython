@@ -106,10 +106,10 @@ def predict():
 
         Oimg.append(crop[0:crop.shape[1],0:40])
         Oimg.append(crop[0:crop.shape[1],40:80])
-        Oimg.append(crop[0:crop.shape[1],80:110])
-        Oimg.append(crop[0:crop.shape[1],120:150])
-        Oimg.append(crop[0:crop.shape[1],150:190])
-        Oimg.append(crop[0:crop.shape[1],190:230])
+        Oimg.append(crop[0:crop.shape[1],90:120])
+        Oimg.append(crop[0:crop.shape[1],130:160])
+        Oimg.append(crop[0:crop.shape[1],160:200])
+        Oimg.append(crop[0:crop.shape[1],200:240])
         Oimg.append(crop[0:crop.shape[1],230:270])
         Oimg.append(crop[0:crop.shape[1],270:310])
         output1=[]
